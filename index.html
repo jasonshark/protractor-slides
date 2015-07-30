@@ -47,7 +47,7 @@
 				<section class="center">
 					<section id="title-slide" class="center">
 						<h2>E2E Testing in Angular.js</h2>
-						<p>Connor Leech / Github: jasonshark / cleech@proteus.com</p>
+						<p>Connor Leech / cleech@proteus.com</p>
 					</section>
 
 					<section class="center">
@@ -65,26 +65,27 @@
 					<h2 style='margin-bottom:10px;'>Testing Landscape</h2>
 					<ul style='margin-top:0px;'>
 						<li class="fragment">
-							<p class='fragment highlight-blue visible'>Protractor</p>
+							<span style='color:blue;'>Protractor</span>
 							- end to end test framework built with Selenium Webdriver
 						</li>
 						<li class="fragment">
-							<p class='fragment highlight-blue visible'>Jasmine</p>
+							<span style='color:blue;'>Jasmine</span>
 							- behavior-driven test framework
 						</li>
 						<li class="fragment">
-							<span class='fragment highlight-red visible'>Mocha</span> - lightweight test framework</li>
-						<li class="fragment">
-							<span class='fragment highlight-red visible'>Chai</span> - assertion library (used with framework)
+							<span style='color:red;'>Mocha</span> - lightweight test framework
 						</li>
 						<li class="fragment">
-							<span class='fragment highlight-red visible'>Sinon</span> - mocking library (used with framework)
+							<span style='color:red;'>Chai</span> - assertion library (used with framework)
 						</li>
 						<li class="fragment">
-							<span class='fragment highlight-red visible'>Karma</span> - unit test framework
+							<span style='color:red;'>Sinon</span> - mocking library (used with framework)
 						</li>
 						<li class="fragment">
-							<span class='fragment highlight-red visible'>Cucumber</span> - write tests in plain text and more tests in Ruby/Java/.NET
+							<span style='color:red;'>Karma</span> - unit test framework
+						</li>
+						<li class="fragment">
+							<span style='color:green;'>Cucumber</span> - write tests in plain text and more tests in Ruby/Java/.NET
 						</li>
 					</ul>
 				</section>
@@ -258,32 +259,40 @@ it('should not successfully login', function () {
 cd ng
 webdriver-manager update
 webdriver-manager start
-grunt test --type=mobile --app=auth
+grunt test --type=mobile --app=profile
 					</code>
 					</pre>
 
 					<p>Test will open in a fresh browser</p>
 				</section>
 				<section class='center'>
-					<h2>Protractor config</h2>
+					<h2>Protractor playground</h2>
+
+					<a href='https://github.com/jasonshark/mean-testing-todone' target='_blank'>https://github.com/jasonshark/mean-testing-todone</a>
+
+					<a href='https://github.com/jasonshark/protractor-demo' target='_blank'>https://github.com/jasonshark/protractor-demo</a>
+
+					<h4>Getting setup</h4>
+					<p>Install JDK</p>
+					<pre><code>
+npm install -g protractor
+webdriver-manager update
+					</code></pre>
 				</section>
 
+				<section>
+					<h2>Protractor config</h2>
+				</section>
 				<section class="center">
 					<h2>Why E2E with Protractor?</h2>
 					<ul>
 						<li>steers browsers exactly as the user would</li>
-						<li>tests the entire running application, unit tests with Karma</li>
-						<li>peace of mind knowing the flow still works</li>
+						<li>tests the entire running application, unit tests can be done with Karma</li>
+						<li>increase confidence that the app works as expected</li>
 					</ul>
 				</section>
-
-				
-
 				<section class="center">
 					<h2>The End</h2>
-
-					<p><br />Want to become a better developer?<br />We're hiring.</p>
-					<p>info@alleyinteractive.com</p>
 				</section>
 
 			</div>
